@@ -7,7 +7,8 @@ and execute:
 ssh cmslpc-sl7.fnal.gov -L8xxx:localhost:8xxx
 
 # create a working directory and clone the repo
-mkdir -p nobackup/cmsdas2020 & cd nobackup/cmsdas2020
+mkdir -p nobackup/cmsdas2020
+cd nobackup/cmsdas2020
 git clone git@github.com:nsmith-/CMSDAS_EGamma.git
 cd CMSDAS_EGamma
 
