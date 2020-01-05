@@ -14,7 +14,7 @@ cd CMSDAS_EGamma
 # this script sets up the python environment, only run once
 ./setup.sh
 
-# this enables the environment, run it each login
+# this enables the environment, run it each login (csh users: use activate.csh)
 source egammaenv/bin/activate
 
 # this gives you permission to read CMS data via xrootd

@@ -13,4 +13,5 @@ source $NAME/bin/activate
 python -m pip install setuptools pip --upgrade
 python -m pip install "coffea>=0.6.27"
 sed -i "2a source ${LCG}" $NAME/bin/activate
+sed -i "4a source ${LCG}" $NAME/bin/activate.csh
 ipython kernel install --user --name=$NAME
