@@ -21,6 +21,9 @@ source egammaenv/bin/activate
 # this gives you permission to read CMS data via xrootd
 voms-proxy-init --voms cms --valid 100:00
 
+# in case you do not already have this in your .bashrc (or equivalent) please run
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+
 jupyter notebook --no-browser --port 8xxx
 ```
 There should be a link like `http://localhost:8123/?token=...` displayed in the output at this point, paste that into your browser.
