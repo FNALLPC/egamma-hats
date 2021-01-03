@@ -1,8 +1,9 @@
 EGamma exercise
 ---------------
 This exercise provdes an introduction to CMS electron and photon objects. It is used as part of:
- - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2020EGammaExercise)
+ - [CMSDAS 2021](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2021EGammaExercise)
  - [LPC HATS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/EGammaHATSatLPC2020)
+ - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2020EGammaExercise)
 
 To setup the exercise environment, choose a 3-digit number to replace the three instances of `xxx` below,
 and execute:
