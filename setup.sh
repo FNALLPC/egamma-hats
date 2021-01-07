@@ -14,7 +14,7 @@ LOCALPATH=$(python -c 'import sys; print(f"{sys.prefix}/lib/python{sys.version_i
 export PYTHONPATH=${LOCALPATH}:$PYTHONPATH
 python -m pip install setuptools pip wheel --upgrade
 python -m pip install --upgrade matplotlib
-python -m pip install "coffea==0.7.0rc1"
+python -m pip install "coffea==0.7.0rc1" hist
 sed -i "2a source ${LCG}/setup.sh" $NAME/bin/activate
 sed -i "3a export PYTHONPATH=${LOCALPATH}:\$PYTHONPATH" $NAME/bin/activate
 sed -i "4a source ${LCG}/setup.csh" $NAME/bin/activate.csh
