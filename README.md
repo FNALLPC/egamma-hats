@@ -9,8 +9,8 @@ To setup the exercise environment, choose a 3-digit number to replace the three 
 and execute:
 ```bash
 # connect to LPC with a port forward to access the jupyter notebook server
-# remember to `kinit username@FNAL.GOV` to set up kerberos authorization before logging in
-ssh cmslpc-sl7.fnal.gov -L8xxx:localhost:8xxx
+# remember to `kinit USERNAME@FNAL.GOV` to set up kerberos authorization before logging in
+ssh USERNAME@cmslpc-sl7.fnal.gov -L8xxx:localhost:8xxx
 
 # create a working directory and clone the repo
 cd nobackup # if this symlink does not exist, look for /uscms_data/d1/$USER
