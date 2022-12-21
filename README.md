@@ -1,7 +1,8 @@
 EGamma exercise
 ---------------
 This exercise provdes an introduction to CMS electron and photon objects. It is used as part of:
- - [CMSDAS 2021](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2021EGammaExercise)
+ - [CMSDAS 2023](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2023EGammaShortExercise)
+ - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2021EGammaExercise)
  - [LPC HATS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/EGammaHATSatLPC2020)
  - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2020EGammaExercise)
 
@@ -14,7 +15,7 @@ ssh USERNAME@cmslpc-sl7.fnal.gov -L8xxx:localhost:8xxx
 
 # create a working directory and clone the repo
 cd nobackup # if this symlink does not exist, look for /uscms_data/d1/$USER
-git clone git@github.com:nsmith-/CMSDAS_EGamma.git
+git clone git@github.com:gracecummings/CMSDAS_EGamma.git
 cd CMSDAS_EGamma
 
 # this script sets up the python environment, only run once
