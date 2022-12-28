@@ -18,6 +18,9 @@ cd nobackup # if this symlink does not exist, look for /uscms_data/d1/$USER
 git clone git@github.com:gracecummings/CMSDAS_EGamma.git
 cd CMSDAS_EGamma
 
+# in case you do not already have this in your .bashrc (or equivalent) please run
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+
 # this script sets up the python environment, only run once
 ./setup.sh
 
@@ -26,9 +29,6 @@ source egammaenv/bin/activate
 
 # this gives you permission to read CMS data via xrootd
 voms-proxy-init --voms cms --valid 100:00
-
-# in case you do not already have this in your .bashrc (or equivalent) please run
-source /cvmfs/cms.cern.ch/cmsset_default.sh
 
 jupyter notebook --no-browser --port 8xxx
 ```
