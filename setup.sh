@@ -12,6 +12,7 @@ python -m venv --copies $NAME
 source $NAME/bin/activate
 LOCALPATH=$(python -c 'import sys; print(f"{sys.prefix}/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages")')
 export PYTHONPATH=${LOCALPATH}:$PYTHONPATH
+python -m pip install git+https://github.com/cms-nanoAOD/correctionlib.git
 sed -i "2a source ${LCG}/setup.sh" $NAME/bin/activate
 sed -i "3a export PYTHONPATH=${LOCALPATH}:\$PYTHONPATH" $NAME/bin/activate
 sed -i "4a source ${LCG}/setup.csh" $NAME/bin/activate.csh
