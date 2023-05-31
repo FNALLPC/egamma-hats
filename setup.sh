@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
 NAME=egammaenv
-LCG=/cvmfs/sft.cern.ch/lcg/views/LCG_102/x86_64-centos7-gcc11-opt #as of Dec 2022, most recent LCG
+LCG=/cvmfs/sft.cern.ch/lcg/views/LCG_102b/x86_64-centos8-gcc11-opt
 
 if [[ -f $NAME/bin/activate ]]; then
   echo "egammaenv already installed. Run \`source $NAME/bin/activate\` to activate"
   exit 1
 fi
+
 source $LCG/setup.sh
 python -m venv --copies $NAME
 source $NAME/bin/activate
+
 LOCALPATH=$(python -c 'import sys; print(f"{sys.prefix}/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages")')
 export PYTHONPATH=${LOCALPATH}:$PYTHONPATH
 python -m pip install git+https://github.com/cms-nanoAOD/correctionlib.git
