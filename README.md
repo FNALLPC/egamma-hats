@@ -15,7 +15,9 @@ Please use "102", maximum cores and maximum RAM, when selecting the environment.
 
 ![](Pics/instructions.PNG)
 Copy commands below:
+
 >`cd SWAN_projects/CMSDAS_CERN_2023/`
+
 >`git clone -b test_update https://github.com/CERN-CMS-DAS-2023/short-ex-egm.git`
 
 We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb`
