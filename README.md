@@ -12,11 +12,14 @@ Some references:
 We will use here https://swan.cern.ch
 Please use software stack "102", maximum cores and maximum RAM, when selecting the environment.
 
-![](Pics/instructions.PNG)
-Copy commands below:
+![](Pics/instr.PNG)
+
+Then run the commands below in the terminal:
 
 >`cd SWAN_projects/CMSDAS_CERN_2023/`
 
 >`git clone https://github.com/CERN-CMS-DAS-2023/short-ex-egm.git`
+
+Now, go back to SWAN tab, and open the "short-ex-egm" folder.
 
 We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb`
