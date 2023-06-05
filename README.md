@@ -1,4 +1,4 @@
-\0;10;1cEGamma exercise
+EGamma exercise
 ---------------
 This exercise provdes an introduction to CMS electron and photon objects. It is used as part of:
 
@@ -9,15 +9,14 @@ Some references:
  - [LPC HATS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/EGammaHATSatLPC2020)
  - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2020EGammaExercise)
 
-
 We will use here https://swan.cern.ch
-Please use "102", maximum cores and maximum RAM, when selecting the environment.
+Please use software stack "102", maximum cores and maximum RAM, when selecting the environment.
 
 ![](Pics/instructions.PNG)
 Copy commands below:
 
 >`cd SWAN_projects/CMSDAS_CERN_2023/`
 
->`git clone -b test_update https://github.com/CERN-CMS-DAS-2023/short-ex-egm.git`
+>`git clone https://github.com/CERN-CMS-DAS-2023/short-ex-egm.git`
 
 We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb`
