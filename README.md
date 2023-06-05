@@ -15,4 +15,4 @@ Some references:
 
 Please use "102", maximum cores and maximum RAM, when selecting the environment.
 
-We will start with `exercise-1.ipynb` and then move to `exercise-1.ipynb`
+We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb`
