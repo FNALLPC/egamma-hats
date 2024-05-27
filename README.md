@@ -5,7 +5,7 @@ This exercise provdes an introduction to CMS electron and photon objects.
 We will use https://swan.cern.ch
 When selecting the environment, please use software stack "105a", Platform "CentOS7 (gcc11)", maximum cores and maximum memory.
 
-Click on the top right `+` button to create a new project and name it "CMSDAS_CERN_2023". Open a new terminal tab by clicking on `>_` and then run the commands below:
+Click on the top right `+` button to create a new project and name it "CMSDAS_CERN_2024". Open a new terminal tab by clicking on `>_` and then run the commands below:
 
 >`cd SWAN_projects/CMSDAS_CERN_2024/`
 
