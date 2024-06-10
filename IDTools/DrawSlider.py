@@ -37,7 +37,7 @@ def make_slider(prompt_electrons,unmatched_electrons):
     percentile=0.95
     ele_hadronicOverEm_slider = widgets.FloatSlider(value=0.2, min=min(prompt_electrons.hoe), max=0.2, step=0.01,
                                                     description='hadronicOverEm:')
-    ele_sieie_slider = widgets.FloatSlider(value=max(prompt_electrons.sieie), min=min(prompt_electrons.sieie), max=max(prompt_electrons.sieie), step=0.01, description='sieie:')
+    ele_sieie_slider = widgets.FloatSlider(value=max(prompt_electrons.sieie), min=min(prompt_electrons.sieie), max=max(0.05), step=0.001, description='sieie:')
     ele_pfRelIso03_chg_slider = widgets.FloatSlider(value=1, min=min(prompt_electrons.pfRelIso03_chg), max=1, step=0.01, description='pfRelIso03:')
     #ele_pt_slider = widgets.FloatSlider(value=0, min=df['ele_pt'].min(), max=df['ele_pt'].quantile(percentile), step=5, description='ele_pt:')
     ele_hadronicOverEm_slider.layout.width = '800px'
