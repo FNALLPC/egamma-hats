@@ -9,9 +9,9 @@ Currently, SWAN and Purdue AF have the files locally. For SWAN, use `/eos/user/c
 
 Just start a new session on the cluster, open a new terminal and clone the exercise material with the following command:
 
->`git clone https://github.com/ikrommyd/egm-hats-2024.git`
+>`git clone https://github.com/FNALLPC/egamma-hats.git`
 
-Then, open the jupyterlab interface and navigate to the folder `egm-hats-2024`.
+Then, open the jupyterlab interface and navigate to the folder `egamma-hats`.
 
 We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb` and `exercise-3.ipynb`.
 
