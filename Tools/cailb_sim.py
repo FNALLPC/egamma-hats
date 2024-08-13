@@ -71,7 +71,19 @@ def reco_electron_pairs(
 
 
 def make_mass_plot(
-    gen_m_ee, reco_m_ee, alpha_Calib, laser_scenario, pT1, pT2, eta1, eta2, phi1, phi2, xlim=[60, 120], ylim=[0, 6000], bin_width=0.5
+    gen_m_ee,
+    reco_m_ee,
+    alpha_Calib,
+    laser_scenario,
+    pT1,
+    pT2,
+    eta1,
+    eta2,
+    phi1,
+    phi2,
+    xlim=[60, 120],
+    ylim=[0, 6000],
+    bin_width=0.5,
 ):
     from matplotlib.widgets import Slider  # Import Slider class
 
