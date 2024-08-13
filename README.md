@@ -1,20 +1,16 @@
-EGamma exercise
+EGamma HATS 2024
 ---------------
-This exercise provdes an introduction to CMS electron and photon objects.
+This exercise provides an introduction to CMS electron and photon objects.
 
-We will use https://swan.cern.ch
+To run this exercise, you can use https://swan.cern.ch or another cluster with a jupyterlab interface and a software close to LCG 105a. You mainly need a `coffea 0.7.x` environment.
 
-When selecting the environment, please use software stack "105a", Platform "CentOS7 (gcc11)", maximum cores and maximum memory.
+Just open a new terminal on the cluster and clone the exercise material with the following command:
 
-Click on the top right `+` button to create a new project and name it "CMSDAS_CERN_2024". Open a new terminal tab by clicking on `>_` and then run the commands below:
+>`git clone https://github.com/ikrommyd/egm-hats-2024.git`
 
->`cd SWAN_projects/CMSDAS_CERN_2024/`
+Then, open the jupyterlab interface and navigate to the folder `egm-hats-2024`.
 
->`git clone https://gitlab.cern.ch/cmsdas-cern-2024/short-ex-egm.git`
-
-Now, go back to SWAN tab, and open the "short-ex-egm" folder.
-
-We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb`.
+We will start with `exercise-1.ipynb` and then move to `exercise-2.ipynb` and `exercise-3.ipynb`.
 
 Some references:
  - [CMSDAS CERN 2024](https://indico.cern.ch/event/1388937/)
