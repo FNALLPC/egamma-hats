@@ -71,7 +71,7 @@ def reco_electron_pairs(
 
 
 def make_mass_plot(
-    gen_m_ee, reco_m_ee, alpha_Calib, laser_scenario, pT1, pT2, eta1, eta2, phi1, phi2
+    gen_m_ee, reco_m_ee, alpha_Calib, laser_scenario, pT1, pT2, eta1, eta2, phi1, phi2, xlim=[60, 120], ylim=[0, 6000], bin_width=0.5
 ):
     from matplotlib.widgets import Slider  # Import Slider class
 
@@ -81,14 +81,14 @@ def make_mass_plot(
             [gen_m_ee / 1000, reco_m_ee / 1000],
             histtype="step",
             linewidth=2,
-            bins=np.arange(60, 120, 0.5).tolist(),
+            bins=np.arange(xlim[0], xlim[1] + bin_width, bin_width).tolist(),
             label=["generated electron pairs", "reconstructed electron pairs"],
         )  # Divide by 1000 to convert from MeV to GeV
         ax.set_xlabel("Invariant mass (GeV)")
         ax.set_ylabel("Counts")
-        ax.set_ylim((0, 6000))
-        ax.set_xlim((60, 120))
-        ax.set_title("Di-electron invariant mass distribution")
+        ax.set_xlim((xlim[0], xlim[1]))
+        ax.set_ylim((ylim[0], ylim[1]))
+        ax.set_title("Dielectron invariant mass distribution")
         ax.legend()
 
     ################################################################
