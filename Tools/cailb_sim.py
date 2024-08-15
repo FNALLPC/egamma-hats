@@ -85,7 +85,7 @@ def make_mass_plot(
     ylim=[0, 6000],
     bin_width=0.5,
 ):
-    # from matplotlib.widgets import Slider  # Import Slider class
+    from matplotlib.widgets import Slider  # Import Slider class
 
     ################################################################
     def plotz(ax, gen_m_ee, reco_m_ee):
@@ -117,17 +117,17 @@ def make_mass_plot(
     slider_ax_2 = fig.add_axes(
         [0.3, 0.1, 0.5, 0.03]
     )  # Position and size of the slider axes
-    #calib_slider = Slider(slider_ax, "alpha_Calib", 0.9, 1.2, valinit=alpha_Calib)
-    #scenario_slider = Slider(
-    #    slider_ax_2, "laser scenario", 0, 2, valinit=laser_scenario, valstep=1
-    #)
+    calib_slider = Slider(slider_ax, "alpha_Calib", 0.9, 1.2, valinit=alpha_Calib)
+    scenario_slider = Slider(
+        slider_ax_2, "laser scenario", 0, 2, valinit=laser_scenario, valstep=1
+    )
 
     ################################################################
     # Define a function that will update the plot when the slider value changes
     def update(val):
         # Get the new value of calib from the slider
-        calib = 1 #calib_slider.val
-        scenario = 1 #scenario_slider.val
+        calib = calib_slider.val
+        scenario = scenario_slider.val
         # Update recopT1 and recopT2 using the new calib value
         recopT1, recopT2, recoeta1, recoeta2, recophi1, recophi2 = reco_electron_pairs(
             pT1, pT2, eta1, eta2, phi1, phi2, calib, scenario
@@ -145,8 +145,8 @@ def make_mass_plot(
 
     ################################################################
     # Register the update function with the slider object
-    # scenario_slider.on_changed(update)
-    # calib_slider.on_changed(update)
+    scenario_slider.on_changed(update)
+    calib_slider.on_changed(update)
 
     fig.canvas.draw()
     ################################################################
